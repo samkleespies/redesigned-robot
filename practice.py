@@ -15,6 +15,6 @@ print("Current price of BABA: " + soup.td.string)
 sauce2 = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/momo/').read()
 
 # pass the HTML code to BeautifulSoup
-soup2 = bs.BeautifulSoup(sauce2c, 'lxml')
+soup2 = bs.BeautifulSoup(sauce2, 'lxml')
 
 print("Current price of MOMO: " + soup2.td.string)
