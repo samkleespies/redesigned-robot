@@ -1,5 +1,4 @@
 # python practice
-
 import bs4 as bs
 import urllib.request
 
@@ -18,3 +17,11 @@ sauce2 = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/momo
 soup2 = bs.BeautifulSoup(sauce2, 'lxml')
 
 print("Current price of MOMO: " + soup2.td.string)
+
+# grab the sauce bois, and read it
+sauce3 = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/AMZN/').read()
+
+# pass the HTML code to BeautifulSoup
+soup3 = bs.BeautifulSoup(sauce3, 'lxml')
+
+print("Current price of AMZN: " + soup3.td.string)
