@@ -7,16 +7,15 @@ sauce = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/baba/
 
 # pass the HTML code to BeautifulSoup
 soup = bs.BeautifulSoup(sauce, 'lxml')
-
 baba = float(soup.td.string)
+flux = soup.find('td', attrs={'class': 'value-change'}).string
+
 print("Current price of BABA:", baba)
-
-# calculate the price current share has increased/decreased
-fluc = # (currPrice)(changeSinceYesterday)
-price_yesterday = 
-
-
-print("Price yesterday:")
+print("Yeserday's price of BABA:")
+print("Change since yesterday:", flux)
+# # calculate the price current share has increased/decreased
+# fluc = # (currPrice)(changeSinceYesterday)
+# price_yesterday =
 
 # grab the sauce bois, and read it
 sauce2 = urllib.request.urlopen('http://www.investopedia.com/markets/stocks/momo/').read()
