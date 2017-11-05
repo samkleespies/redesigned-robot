@@ -15,7 +15,7 @@ Run in the terminal:
 > tip: ex: "cd Documents/Workspace/Git" to change directories
 
 ``` bash
-$ python3 current_stock_prices.py
+python3 current_stock_prices.py
 ```
 
 > if "python3" does not work, try just "python"
@@ -28,5 +28,5 @@ and AMZN (my usuals). Please feel free to edit and add your own.
 
 Run in the terminal:
 ``` bash
-$ python3 current_stock_prices.py
+python3 current_stock_prices.py
 ```
