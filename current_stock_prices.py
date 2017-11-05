@@ -1,4 +1,6 @@
-# python practice
+# Python practice
+# This script pulls BABA, MOMO, and AMZN current stock prices, feel free to add.
+
 import bs4 as bs
 import urllib.request
 
